@@ -4,17 +4,16 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
-# LineageOS System Version
+# AOSP-Gumiho System Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.version=$(LINEAGE_VERSION) \
-    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE) \
-    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(LINEAGE_VERSION) \
+    ro.gumiho.maintainer=$(GUMIHO_MAINTAINER) \
+    ro.gumiho.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+    ro.gumiho.display.version=$(LINEAGE_DISPLAY_VERSION) \
+    ro.gumiho.version=$(LINEAGE_VERSION) \
+    ro.modversion=$(GUMIHO_VERSION) \
+    ro.gumiho.packagetype=$(GUMIHO_VARIANT) \
+    ro.gumiho.releasetype=$(GUMIHO_BUILD_TYPE) \
     ro.lineagelegal.url=https://lineageos.org/legal
-
-# LineageOS Platform Display Version
-ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION)
 
 # LineageOS Platform SDK Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
